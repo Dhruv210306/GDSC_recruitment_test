@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 2fr 1fr;
+            gap: 10px;
+            padding: 10px;
+            height: 100vh;
+            background-color: #111;
+        }
+        .gridrow-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 10px 10px 0px 10px;
+        }
+
+        .gridrow-2 {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 10px;
+        padding: 0px 10px 10px 10px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .item:hover {
+            opacity: 0.8; 
+        }
+
+        .item-1 {
+            background-color: #d32f2f;
+            border-top-left-radius: 10px;
+            grid-row: span 2;
+
+        }
+
+        .item-2 {
+            background-color: #f5f5dc;
+            font-family: fantasy;
+            color: black; 
+        }
+
+        .item-3 {
+            background-color: #9fa8da;
+            border-top-right-radius: 10px;
+            grid-row: span 2;
+        }
+
+        .item-4 {
+            background-color: #212121;
+            font-family: fantasy;
+        }
+
+        .item-5 {
+            background-color: #c8e6c9;
+            font-family: fantasy;
+            font-weight: bold;
+            font-size: 2.5em;
+            color: black;
+            border-bottom-left-radius: 10px;
+        }
+
+        .item-6 {
+            background-color: #fce4ec;
+            font-size: 2.5em;
+            font-family: fantasy;
+            font-weight: bold;
+            color: black;
+            border-bottom-right-radius: 10px;
+        }
+
+        .icon {
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gridrow-1">
+            <div class="item item-1">
+                <span class="icon">📝</span>
+            </div>
+            <div class="item item-2">
+                12833
+            </div>
+            <div class="item item-3">
+                <span class="icon">🚫</span>
+            </div>
+            <div class="item item-4">
+                <h1>Dhruv Kumar Singh</h1>
+            </div>
+        </div>
+        <div class="gridrow-2">
+            <div class="item item-5">
+                <h2>Works</h2>
+            </div>
+            <div class="item item-6">
+                <h2>Fear & Failures</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
